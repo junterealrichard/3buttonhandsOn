@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <title>Act.2_Mycal.</title>
-  <style>
-  body{
-    background:gray;
-  }
-  
-  input[type="text"] {
-  width: 240px;
-  padding: 10px;
-  boarder-radius:5px;
-  
-  } 
-  input[type="button"] {
-  width: 63px;
-  padding: 10px;
-  font-size:17px;
-  font-weigh:bold;
-  boader-radius:5px;
-  margin-top: 2px;
-  background:gray;
-  }
-  .calcu {
-    width:270px;
-    margin:auto;
-    hieght:auto;
-    background:black;
-    padding:20px;
-  }
-  h4{
-    color:pink;
-    margin:5px;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript AddEventListener() Hands-On</title>
+    <style>
+        body {
+            display: inline-block;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(to right, coral,red);
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        button {
+            padding: 10px 50px;
+            margin: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+
+        #button1 {
+            margin-left: 30px;
+            background-image: linear-gradient(to right,#de6262, #ffb88c);
+            
+        }
+
+        #button2 {
+            background-image: linear-gradient(to right,#eacda3, #d6ae7b);
+        }
+
+        #button3 {
+            margin-left: 130px;
+            background-image: linear-gradient(to right,#02aab0, #00cdac);
+        }
+    </style>
 </head>
 <body>
-  <table id="calcu">
-    <h4>My calculator</h4>
-   <tr>
-    <td colspan="3">
-      <input type="text" id="result" disabled>
-    </td>
-    <td><input type="button" onclick="clear()" value="c"</td>
-   </tr> 
-     
-   <tr>
-     <td><input type="button" onlclick="append(1)" value="1"</td> 
-     
-     
-     
-   </tr>
-     
-    
-    
-    
-    
-    
-    
-    
-    
-  </table>
+    <h1>JavaScript AddEventListener() Hands-On</h1> 
+  <br>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <button id="button3">Button 3</button>
+
+    <script>
+        function function1() {
+            alert("Button 1 was clicked!");
+        }
+        function function2() {
+            alert("Button 2 was clicked!");
+        }
+        function function3() {
+            alert("Button 3 was clicked!");
+        }
+        document.getElementById("button1").addEventListener("click", function1);
+        document.getElementById("button2").addEventListener("click", function2);
+        document.getElementById("button3").addEventListener("click", function3);
+    </script>
 </body>
 </html>
